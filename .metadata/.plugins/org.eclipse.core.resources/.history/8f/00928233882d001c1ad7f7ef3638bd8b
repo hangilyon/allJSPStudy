@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex12</title>
+<script type="text/javascript">
+	function su(){
+		alert('submit')
+	}
+</script>
+
+</head>
+<body>
+	<form action="ex10.html">
+		<input type="text">(필수항목)<br>
+		<input type="text"><br>
+		<input type="submit" value="submit" onclick="su()">
+		<input type="button" value="button"><br>
+	</form>
+</body>
+</html>

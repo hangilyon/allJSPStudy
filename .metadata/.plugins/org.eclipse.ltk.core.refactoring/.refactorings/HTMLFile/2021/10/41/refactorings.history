@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Move &apos;quiz.html&apos; to &apos;HTMLFile&apos;" description="Move &apos;quiz.html&apos; to &apos;HTMLFile&apos;" destination="/HTMLFile" element1="img/quiz.html" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1633431198773" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;HTMLFile/quiz.html&apos; to &apos;quiz_blog.html&apos;" description="Rename resource &apos;quiz.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="quiz.html" name="quiz_blog.html" stamp="1633431510222" updateReferences="true"/>
+</session>

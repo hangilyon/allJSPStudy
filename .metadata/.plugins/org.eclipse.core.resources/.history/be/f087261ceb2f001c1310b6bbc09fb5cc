@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex20</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+</script>
+
+<style>
+	img {
+		width: 250px;
+	}
+</style>
+</head>
+<body>
+	<div class="css_pic">
+		<button class="b1">100픽셀</button>
+		<button class="b2">200픽셀</button>
+		<button class="b3">300픽셀</button>
+		<br>
+		<img src="resources/images/car01.png">
+	</div>
+</body>
+</html>

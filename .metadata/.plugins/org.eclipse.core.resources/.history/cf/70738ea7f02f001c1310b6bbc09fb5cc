@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex22</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+</script>
+
+<style>
+
+</style>
+
+</head>
+<body>
+	<header>
+		<h1>회사로고 또는 회사명이 들어온다</h1>
+	</header>
+	<nav>
+		<h1>네비에 관련된 사항</h1>
+	</nav>
+</body>
+</html>

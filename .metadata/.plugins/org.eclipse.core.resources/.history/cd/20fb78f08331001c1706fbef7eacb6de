@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex02_1</title>
+</head>
+<body>ex02_1.jsp<br>
+	<%
+		String s = request.getParameter("n");
+		out.print(s);
+		String[] str = request.getParameterValues("n");
+		out.print("<hr>");
+		if(str != null){
+			for(int i=0;i<str.length;i++){
+				out.print(str[i]+"<br>");
+			}
+			
+			for(String n : str){
+				out.print(n+"<br>");
+			}
+		}else{
+			out.print("선택값이 없습니다<br>");
+		}
+	%>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex09</title>
+<script type="text/javascript">
+	function insertOpt(){
+		var insert = document.getElementById('insert')
+		var DBSport = ['축구','농구','야구','족구']
+		for(i=0;i<DBSport.length;i++){
+			var opt = document.createElement("option")
+			opt.innerHTML = DBSport[i]
+			insert.appendChild(opt)
+		}
+	}
+
+</script>
+</head>
+<body onload="insertOpt()">
+	<select id="insert">
+	
+	</select>
+</html>

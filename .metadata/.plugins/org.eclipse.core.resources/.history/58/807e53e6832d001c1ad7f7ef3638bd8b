@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex10</title>
+<script type="text/javascript">
+	function myFocus(){
+		document.getElementById('').focus()
+	}
+</script>
+</head>
+<body>
+	<input type="text"><br>
+	<input type="password" id="pw"><br>
+	<input type="button" value="click" onclick="myFocus()"><br>
+</body>
+</html>

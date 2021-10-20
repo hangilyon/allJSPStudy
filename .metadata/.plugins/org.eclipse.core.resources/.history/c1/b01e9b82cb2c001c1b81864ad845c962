@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>quiz04</title>
+<style>
+#wrap {
+	margin: 0;
+	padding: 0;	
+	width: 700px;
+	height: 500px;
+	display: flex;
+}
+#left {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+#pic {
+	width: 500px;
+	height: 500px;
+}
+#right {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+</style>
+<script type="text/javascript">
+	function prefPic(){
+		var num = 1
+		if(num == 8){
+			num = 1
+		}else{
+			document.getElementById(left).src = "resources/images/최근상품0"+num+".jpg"
+		}
+	}
+	function nextPic(){
+		
+	}
+</script>
+</head>
+<body>
+<div id="wrap">
+	<img id="left" src="resources/images/왼쪽화살표.jpg">
+	<img id="pic" src="resources/images/최근상품01.jpg">
+	<img id="right" src="resources/images/오른쪽화살표.jpg">
+</div>
+</body>
+</html>

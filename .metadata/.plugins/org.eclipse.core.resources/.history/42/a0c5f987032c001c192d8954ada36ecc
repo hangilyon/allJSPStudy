@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex03</title>
+<script type="text/javascript">
+/*
+ 	var : 지역변수로 사용되며 변수의 재 선언이 가능하다
+ 	let : 지역변수로만 사용가능하며 변수의 재 선언이 불가능하다. 딱 한번만 사용이 가능하다
+ 	default(키워드 없음) : 전역변수로 사용가능하다.
+ 	const : 값 변경이 불가능하다. (=final)
+ */
+	function getValue(){
+		kor = 90;
+		kor = 100;
+		document.write('지역변수 kor: '+kor+"<br>")
+		document.write('전역변수 : '+kor01+"<br>")
+	}
+	var kor01 = 12345;
+	getValue()
+	document.write('kor : '+kor)
+	
+	function returnValue(){
+		var k = "돌려주는값"
+		return k;
+	}
+	document.write("<h3>"+ returnValue() + "</h3>")
+	
+	function argValue(msg,a,b,c,d){
+		document.write("<h3>"+msg+"</h3>")
+	}
+	argValue("넘겨주는값",a,b,c,d)
+</script>
+</head>
+<body>
+
+</body>
+</html>

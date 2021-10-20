@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex03</title>
+<script type="text/javascript">
+	function getValue(){
+		var kor = 90;
+		document.write(kor01)
+	}
+	var kor01 = 12345;
+	getValue()
+</script>
+</head>
+<body>
+
+</body>
+</html>

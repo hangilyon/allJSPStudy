@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex04</title>
+<script type="text/javascript">
+	function test(){}	
+</script>
+</head>
+<body>
+	<input type="text" id="name1"><br>
+	<input type="text" id="name2"><br>
+	<div id="member">회원정보</div>
+	<input type="button" value="클릭" onclick="test()"><br>
+</body>
+</html>

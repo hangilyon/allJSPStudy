@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>quiz05</title>
+<style>
+	body{width:100%;height:700px;}
+	.header{height:25%; text-align: center; display:flex;}
+	.header img{width:100px;height:100px; box-shadow: 10px 10px 10px black}
+	.header h1{margin:auto;margin-top:10px;}
+	.nav{background-color:#8C8C8C; display:flex; color:white; height:7%}
+	.nav p{margin:auto; margin-left:70px; margin-right:0px;}
+	.main{height:60%;display:flex;}
+	.main .mainImg{width:20%;height:100%;}
+	.main .mainImg img{width:100%; height:50%;}
+	.main .mainCenter{width:40%;}
+	.main .mainCenter h2,p{margin-left:30px;margin-top:20px;}
+	.main .mainCenter h2{margin-bottom:50px;}
+	.main .mainCenter p{font-size:15pt;}
+	.main .mainSmallImg {width:100px;display:flex; flex-flow:column;
+						padding-top:100px;}
+	.main .mainSmallImg img{width:100px;height:100px;}
+	.main .mainRight{background-color: red; height:100%;width:30%;}
+	.main .mainRight .login{width:100%;height:100px;background-color: yellow;display:flex;}
+	.main .mainRight .login .loginInput{width:150px;height:50px; background-color: red;margin-left:10px;margin-top:10px;}
+	.main .mainRight .login .id{width:150px; height:25px;}
+	.main .mainRight .login .pwd{width:150px; height:25px;}
+	.main .mainRight .login .btn{width:80px; height:60px; margin-left:8px;}
+	
+	
+</style>
+</head>
+<body>
+	<div class="header">
+		<img class ="img" src="images/맛집.png">
+		<h1>맛집탐방 이야기 ^^</h1>
+	</div>
+	<div class="nav">
+		<p>HOME</p>
+		<p>게시판</p>
+		<p>내정보</p>
+	</div>
+	<div class="main">
+		<div class="mainImg">
+			<img src="images/cici33_35_lommel2003.jpg">
+			<img src="images/l_aside.gif">
+		</div>
+		<div class="mainCenter">
+			<h2>&#60; 오늘의 맛집 &#62;</h2>
+			<p>오늘 방문한 곳은 맛있는 음식이 나오는 집</p>
+			<p>오늘 방문한 곳은 맛있는 음식이 나오는 집</p>
+			<p>오늘 방문한 곳은 맛있는 음식이 나오는 집</p>			
+		</div>
+		<div class="mainSmallImg">
+			<img src="images/맛집01.jpg">
+			<img src="images/맛집02.jpg">
+			<img src="images/맛집03.jpg">
+		</div>
+		<div class="mainRight">
+			<div class="login">
+				<div class="loginInput">
+					<input type="text" name= "id" class="id">
+					<input type="password" name= "pwd" class="pwd">
+				</div>
+					<input type="button" value="로그인" class="btn">
+			</div>
+			
+			<div>
+				<a href="#">회원가입</a> / 
+				<a href="#">ID/PW찾기</a>
+			</div>
+			<div>
+				<h2>오늘의 뉴스</h2>
+				<br>
+				<p>날씨 : -32도<br>미세먼지 : 농도 심함<br>운세 : 누구 보다 좋음
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p>CARE LAB</p>
+		<p>Copyright Allrights Reserved</p>
+		<p>1999 | 회사소개 | TEL : 777-7777</p>
+	</div>
+</body>
+</html>

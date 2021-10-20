@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#wrap{width: 960px; margin:auto; background-color:gray}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div class="header">
+	
+	</div>
+	<div class="nav">
+	
+	</div>
+	<div class="content">
+	
+	</div>
+	<div class="footer">
+	
+	</div>
+</div>
+</body>
+</html>

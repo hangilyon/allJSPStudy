@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;css/resources/images/KakaoTalk_20211008_174026348.jpg&apos; to &apos;logo.jpg&apos;" description="Rename resource &apos;KakaoTalk_20211008_174026348.jpg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="resources/images/KakaoTalk_20211008_174026348.jpg" name="logo.jpg" stamp="1633682933737" updateReferences="true"/>
+</session>

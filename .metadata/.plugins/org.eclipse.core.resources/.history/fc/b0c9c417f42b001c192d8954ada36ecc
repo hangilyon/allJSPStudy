@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex01</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = 12345;
+		document.write('안녕하세요 : '+num)
+	</script>
+</body>
+</html>

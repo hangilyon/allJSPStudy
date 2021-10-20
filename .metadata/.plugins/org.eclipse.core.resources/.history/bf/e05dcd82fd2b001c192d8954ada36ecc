@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>quiz02</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var apt = prompt('아파트 층 수 입력')
+		document.write("<table style='border:1'>")
+		for(apt;0<apt;apt--){
+			document.write("<tr>")
+			for(j=1;j<=5;j++){
+				document.write("<td style='border:1'>"+apt+"0"+j+"호</td>")
+			}
+			document.write("</tr>")
+		}
+		document.write("</table>")
+	</script>
+</body>
+</html>

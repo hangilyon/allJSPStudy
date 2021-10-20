@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex13</title>
+<style type="text/css">
+	.wrapper {
+		display: flex;
+		border: 5px solid blue;
+		width: 900px;
+		height: 600px;
+		margin: auto;
+	}
+</style>
+<script type="text/javascript">
+
+</script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="light">
+			<img src="resources/images/switch_on.png" onclick="turnOff()">
+		</div>
+		<div id="test" class="room">
+			<div id="dark"></div>
+		</div>
+	</div>
+</body>
+</html>

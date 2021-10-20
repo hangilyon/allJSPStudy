@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>quiz04</title>
+
+<style>
+	body{width:80%;height:700px;border:3px solid black;text-align:center; 
+	display:flex;flex-flow:column;margin:auto;}
+	.header {background-color: red;height:15%; }
+	.nav {background-color: yellow;height:15%; border-top:3px solid black;
+		border-bottom:3px solid black;}
+	.nav h3{margin:auto; margin-top:40px;}
+	.main{height:55%;display:flex;flex-flow:row;}
+	.main .section1{width:70%; background-color: green;}
+		.main .section1 .secHeader{background-color: pink; border:3px solid black;
+		width:70%; height:10%; margin:auto;}
+		.main .section1 .secArticle{background-color: pink; border:3px solid black;
+		width:70%; height:10%; margin:auto;}
+		.main .section1 .secFooter{background-color: pink; border:3px solid black;
+		width:70%; height:10%; margin:auto;}
+	.main .aside{width:30%; background-color: skyblue;}
+</style>
+</head>
+<body>
+	<div class="header"><h1>&#60; header &#62;</h1></div>
+	<div class="nav"><h3>&#60; nav &#62;</h3></div>
+	<div class="main">
+		<div class="section1">
+			<h3>&#60; section1 &#62;</h3>
+			<div class ="secHeader">&#60; header &#62;</div>
+			<div class ="secArticle">&#60; article &#62;</div>
+			<div class ="secFooter">&#60; footer &#62;</div>
+		</div>
+		<div class="aside"> <h3>&#60; aside &#62;</h3> </div>
+	</div>
+	<div class="footer"><h3>&#60; footer &#62;</h3></div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex16</title>
+<script type="text/javascript">
+	function init(){
+		var t1 = document.getElementById('target1')
+		var t2 = document.getElementById('target2')
+	}
+</script>
+</head>
+<body onload="init()">
+	<button type="button" id="target1">button1</button>
+	<button type="button" id="target2">button1</button>
+</body>
+</html>

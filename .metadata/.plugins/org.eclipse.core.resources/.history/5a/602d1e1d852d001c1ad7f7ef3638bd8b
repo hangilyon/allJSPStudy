@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex10</title>
+<script type="text/javascript">
+	function myFocus(){
+		document.getElementById('pw').focus()
+	}
+	function pwdchk(){
+		let id1 = document.getElementById('id1')
+		let id2 = document.getElementById('id2')
+		id2.value = id1.value
+		id1.value = ""
+	}
+</script>
+</head>
+<body>
+	<button type="button" onclick="">이전</button>
+<hr>
+	<input type="text" id="id1" onchange="pwdchk()"><br>
+	<input type="text" id="id2"><br>
+<hr>
+	<input type="text"><br>
+	<input type="password" id="pw"><br>
+	<input type="button" value="click" onclick="myFocus()"><br>
+</body>
+</html>

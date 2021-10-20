@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex13</title>
+<style type="text/css">
+	.wrapper {
+		display: flex;
+		border: 5px solid blue;
+		width: 900px;
+		height: 600px;
+		margin: auto;
+	}
+	.light {
+		width: 150px;
+		background-color: aqua;
+	}
+	.room {
+		width: 100%;
+		background-image: url("resources/images/room.jpg")
+	}
+	#dark {
+		width: 100%;
+		background-color: black;
+	}
+</style>
+<script type="text/javascript">
+
+</script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="light">
+			<img src="resources/images/switch_on.png" onclick="turnOff()">
+		</div>
+		<div id="test" class="room">
+			<div id="dark"></div>
+		</div>
+	</div>
+</body>
+</html>

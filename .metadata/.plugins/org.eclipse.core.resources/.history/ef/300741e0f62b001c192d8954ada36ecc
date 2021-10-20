@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>quiz01</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var name = prompt('당신의 이름은?')
+		var age = prompt('당신의 나이는?')
+		var address = prompt('당신의 주소는?')
+	</script>
+	<table style="border: 1px double;">
+		<tr>
+			<td>이름</td>
+			<td>나이</td>
+			<td>주소</td>
+		</tr>
+		<tr><script type="text/javascript">
+			<td>document.write("<h1>"+comgrade+"</h1>")</td>
+			<td></td>
+			<td></td>
+		</tr></script>
+	</table>
+</body>
+</html>

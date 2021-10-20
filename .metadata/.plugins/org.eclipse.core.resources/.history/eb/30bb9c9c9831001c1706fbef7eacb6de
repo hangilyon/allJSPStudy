@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="contextPath" value="${pageContext.request.contextPath }"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>chkLogin</title>
+</head>
+<body>chkLogin.jsp<br>
+	<%
+		String dbId="abcd", dbPwd = "1234";
+		String inputId = request.getParameter("id");
+		String inputPwd = request.getParameter("pwd");
+		if(dbId.equals(inputId) && dbPwd.equals(inputPwd)){
+			out.print("로그인 성공");
+		}else{
+			out.print("인증 실패");
+		}
+	%>
+	
+	<c:set var="inputId" value="${param.id }"/>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex01</title>
+<script src="test.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = 12345;
+		document.write('안녕하세요 : '+num)
+		document.write("<div style='color:red;'>안녕하세요</div>")
+	</script>
+	<button type="button" onclick="test()">클릭</button>
+</body>
+</html>

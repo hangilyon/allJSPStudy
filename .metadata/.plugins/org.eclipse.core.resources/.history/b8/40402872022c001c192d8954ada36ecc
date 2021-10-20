@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex03</title>
+<script type="text/javascript">
+/*
+ 	var : 지역변수로 사용되며 변수의 재 선언이 가능하다
+ 	let : 지역변수로만 사용가능하며 변수의 재 선언이 불가능하다.
+ */
+	function getValue(){
+		let kor = 90;
+		kor = 100;
+		document.write('지역변수 kor: '+kor+"<br>")
+		document.write('전역변수 : '+kor01+"<br>")
+	}
+	var kor01 = 12345;
+	getValue()
+	document.write('kor : '+kor)
+</script>
+</head>
+<body>
+
+</body>
+</html>

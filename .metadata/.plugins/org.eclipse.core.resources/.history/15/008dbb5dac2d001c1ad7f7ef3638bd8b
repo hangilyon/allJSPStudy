@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex16</title>
+<script type="text/javascript">
+	function init(){
+		var t1 = document.getElementById('target1')
+		var t2 = document.getElementById('target2')
+		t1.addEventListener('click',btn_listener)
+		t2.addEventListener('click',btn_listener)
+	}
+	function btn_listener(){
+		console.log(event)
+		console.log(event.target)
+		switch(event.target.id){
+		case "target1" : alert('11111'); break;
+		case "target2" : alert('22222'); break;
+		}
+	}
+	function test(){
+		alert(event.target)
+	}
+</script>
+</head>
+<body onload="init()">
+	<button type="button" id="target1">button1</button>
+	<button type="button" id="target2">button1</button>
+	<hr>
+	<button type="button" id="target3" onclick="test()">button3</button>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex02_1</title>
+</head>
+<body>ex02_1.jsp<br>
+	<%
+		String s = request.getParameter("n");
+		out.print(s);
+		String[] str = request.getParameterValues("n");
+		out.print(str[0]);
+		out.print(str[1]);
+		out.print(str[2]);
+	%>
+</body>
+</html>

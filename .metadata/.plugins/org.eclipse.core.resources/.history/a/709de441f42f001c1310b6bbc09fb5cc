@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex23</title>
+</head>
+<body>
+	<div id="draggable" class="drag">
+		<p>Drag me around</p>
+	</div>
+</body>
+</html>

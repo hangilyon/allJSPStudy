@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>quiz03</title>
+<style type="text/css">
+	#wrap {
+	width: 500px;
+	height:550px;
+	background-color: pink;
+	margin: auto;
+	padding: 0;
+	}
+	#img {
+	width: 500px;
+	height: 500px;
+	}
+	#wrap button {
+	width: 200px;
+	height: 40px;
+	
+	
+	}
+</style>
+<script type="text/javascript">
+	var test1 = "resources/images/test1.jpg"
+	var test2 = "resources/images/test2.jpg"
+	var test3 = "resources/images/test3.jpg"
+	var test4 = "resources/images/test4.jpg"
+	var test5 = "resources/images/test5.jpg"
+	var test6 = "resources/images/test6.jpg"
+	var test7 = "resources/images/test7.jpg"
+	var test8 = "resources/images/test8.jpg"
+	function returnImg(){}
+	function nextImg(){
+		var img = 'resources/images/test2.jpg'
+		document.getElementById('img').src = test2
+		if(document.getElementById('img').src=="file:///C:/java/jsp_workspace/javascript/resources/images/test2.jpg"){
+			document.getElementById('img').src=test3
+		}
+		console.log(document.getElementById("img").src)
+	}
+	
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<img id="img" src="resources/images/test1.jpg">
+		<button onclick="returnImg()">이전사진</button><button onclick="nextImg()">다음사진</button>
+	</div>
+</body>
+</html>

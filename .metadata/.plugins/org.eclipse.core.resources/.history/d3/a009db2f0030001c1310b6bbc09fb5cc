@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>quiz09</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="jquery-1.12.1-ui.js"></script>
+<script type="text/javascript">
+	var size = 16;
+	$(function(){
+		$("#remocon").draggable()
+		$("#add").click(function(){
+			$("#fontSize").text(++size)
+			
+			$(".text").animate({
+				fontSize: size
+			})
+			$(".text1").animate({
+				fontSize: (size+16)
+			})
+		})
+		
+		$("#sub").click(function(){
+			if(size>1){
+				$("#fontSize").text(--size)	
+			}else{
+				alert("최소값")
+			}
+			$(".text").animate({
+				fontSize: size
+			})
+			$(".text1").animate({
+				fontSize: (size+16)
+			})
+			
+		})
+	})
+</script>
+
+<style type="text/css">
+#remocon {
+	width: 300px;
+	height: 100px;
+	position: fixed;
+	top: 300px;
+	left: 50px;
+	
+	border: 3px solid black;
+	text-align: center;
+	background-color: white;
+}
+#remocon div {
+	background-color: olive;
+}
+#remocon img {
+	width: 30px;
+	height: 30px;
+	padding-top: 20px;
+}
+#remocon #fontSize {
+	background-color: yellow;
+	font-size: 30px;
+	padding: 0 20px;
+}
+</style>
+</head>
+<body>
+	<div>
+		<h1 class="text1">오늘의 소설</h1>
+		<h4 class="text">오늘도 춥다</h4>
+		<h4 class="text">내일도 춥다</h4>
+		<h4 class="text">모레도 춥다</h4>
+	</div>
+	<div id="remocon">
+		<div>리 모 콘</div>
+		<img src="resources/images/add.png" id="add">
+		<span id="fontSize">16</span>
+		<img src="resources/images/sub.jpg" id="sub">
+	</div>
+</body>
+</html>

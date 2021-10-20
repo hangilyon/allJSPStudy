@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>quiz03</title>
+</head>
+<body>
+	<div class="header"><h1>&#60;header&#62;</h1></div>
+	<div class="main">
+		<div class="nav"><h3>&#60;nav&#62;</h3></div>
+		<div class="section"><h3>&#60;section&#62;</h3></div>
+	</div>
+	<div class="footer">&#60;footer&#62;</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex15</title>
+<style>
+	#tagAdd {
+		width: 300px;
+		border: 1px solid gray;
+	}
+</style>
+<script type="text/javascript">
+	function init(){
+		let DBdata = [
+			{'name':'홍길동111','addr':'산골짜기111'},
+			{'name':'홍길동222','addr':'산골짜기222'},
+			{'name':'홍길동333','addr':'산골짜기333'},
+			{'name':'홍길동444','addr':'산골짜기444'}
+		]
+		let table = document.getElementById('tagAdd')
+
+		
+		
+
+		
+		console.log()
+		for(i=0;i<DBdata.length;i++){
+			var tr = document.createElement('tr')
+			var tdN = document.createElement('td')
+			var tdA = document.createElement('td')
+			
+			tdN.innerHTML = "홍길동"
+			tr.appendChild(tdN)
+			tdA.innerHTML = "산골짜기"
+			tr.appendChild(tdA)
+			
+			table.appendChild(tr)
+		}
+		
+
+	}
+</script>
+</head>
+<body onload="init()">
+	<table id="tagAdd">
+		<tr><th>이름</th> <th>주소</th></tr>
+	</table>
+</body>
+</html>

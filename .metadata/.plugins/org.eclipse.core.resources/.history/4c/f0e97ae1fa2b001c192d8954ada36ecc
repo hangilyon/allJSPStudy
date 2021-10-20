@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex02</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i = 10
+		if(i > 10){
+			
+			
+		}else{
+			document.write("10보다 작다<br>")
+		}
+	
+	</script>
+</body>
+</html>

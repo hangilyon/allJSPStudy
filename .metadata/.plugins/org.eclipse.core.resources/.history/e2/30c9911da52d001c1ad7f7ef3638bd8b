@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex15</title>
+</head>
+<body>
+	<table id="tagAdd">
+		<tr><th>이름</th> <th>주소</th></tr>
+	</table>
+</body>
+</html>

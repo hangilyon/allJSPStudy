@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex04</title>
+<script type="text/javascript">
+	function test(){
+		n = document.getElementById('name1').value
+		document.getElementById('name1').value = ""
+		document.getElementById('name2').value = n
+		
+		DBData = [{'name':'홍길동','id':'12345'},
+				{'name':'김개똥','id':'12345'},
+				{'name':'고길동','id':'12345'},
+				{'name':'김길아','id':'12345'}
+			]
+		html = "<table border='1'>"
+		for(i=0;i<DBData.length;i++){
+			html+="<tr>";
+			html+="<td>"+DBData[i].name+"</td><td>"+DBData[i].id+"</tr>"
+		}
+		html += "</table>"
+		
+		document.getElementById('member').innerHTML = html//"<H3>정보변경</h3>"
+	}
+	function setImg(){
+		
+	}
+</script>
+<style type="text/css">
+	#img {width: 100px; height: 100px;}
+
+</style>
+</head>
+<body>
+
+	<img id="img" src="">
+
+<hr>
+	<input type="text" id="name1"><br>
+	<input type="text" id="name2"><br>
+	<div id="member">회원정보</div>
+	<input type="button" value="클릭" onclick="test()"><br>
+</body>
+</html>

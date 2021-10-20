@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>quiz04</title>
+<style>
+#wrap {
+	margin: 0;
+	padding: 0;	
+	width: 700px;
+	height: 500px;
+	display: flex;
+}
+#left {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+#pic {
+	width: 500px;
+	height: 500px;
+}
+#right {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+</style>
+<script type="text/javascript">
+	var num = 1;
+	function prefPic(){
+		if(num == 1){
+			num = 8
+			document.getElementById('pic').src = "resources/images/최근상품0"+num+".jpg"
+		}else{
+			num--;
+			document.getElementById('pic').src = "resources/images/최근상품0"+num+".jpg"
+		}
+		document.getElementById('num').innerHTML = num+" 번"
+		
+	}
+	function nextPic(){
+		if(num == 8){
+			num = 1
+			document.getElementById('pic').src = "resources/images/최근상품0"+num+".jpg"
+		}else{
+			num++;
+			document.getElementById('pic').src = "resources/images/최근상품0"+num+".jpg"		
+		}		
+		document.getElementById('num').innerHTML = num+" 번"
+	}
+	var myvar;
+	function cngPic(){
+		myVar = setInterval(nextPic,1000)
+		timer()
+	}
+	function stopPic(){
+		clearInterval(myVar)
+	}
+	var e
+	cnt = 0;
+	function timer(){
+		var time = new Date();
+		
+		document.getElementById('time').innerHTML = time.toLocaleString();
+		e = setTimeout('timer()',1000)
+		console.log(cnt++)
+	}
+</script>
+</head>
+<body onload="cngPic()">
+<p id="num">1 번</p><p id="time"></p>
+<div id="wrap">
+	<img id="left" src="resources/images/왼쪽화살표.jpg" onmouseover="stopPic()" onmouseout="cngPic()" onclick="prefPic()">
+	<img id="pic" src="resources/images/최근상품01.jpg" onmouseover="stopPic()" onmouseout="cngPic()">
+	<img id="right" src="resources/images/오른쪽화살표.jpg" onmouseover="stopPic()"onmouseout="cngPic()"  onclick="nextPic()">
+</div>
+</body>
+</html>

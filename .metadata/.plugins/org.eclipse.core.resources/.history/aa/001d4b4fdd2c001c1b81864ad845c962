@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex09</title>
+</head>
+<body>
+	<select id="insert">
+		<option>야구</option>
+		<option>배구</option>
+		<option>족구</option>
+		<option>축구</option>
+	</select>
+</html>
