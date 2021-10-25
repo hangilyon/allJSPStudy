@@ -15,6 +15,7 @@
 	<jsp:setProperty property="*" name="dto"/>
 	<jsp:useBean id="dao" class="com.care.root.member.dao.MemberDAO"/>
 	
+	<%-- 
 	<c:set var="num" value="${dao.modify_save(dto)}"/>
 	<c:if test="${num==1 }">
 	<script type="text/javascript">
@@ -22,5 +23,22 @@
 	</script>
 	</c:if>
 	작동 안 됨
+	--%>
+	
+	<c:choose>
+		<c:when test="${dao.modify_save(dto) ==1 }">
+		 	<script type="text/javascript">
+		 		alert('성공적으로 수정되었습니다!!!!')
+		 		location.href="member_info.jsp?id=${dto.id}";
+		 	</script>
+		</c:when>
+		<c:otherwise>
+		 	<script type="text/javascript">
+		 		alert('수정 실패 했습니다.')
+		 		location.href="modify_view.jsp?id=${dto.id}";
+		 	</script>
+		</c:otherwise>
+	</c:choose>
+	
 </body>
 </html>

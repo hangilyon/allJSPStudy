@@ -112,18 +112,20 @@ public class MemberDAO {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		
 		return result;
 	}
-	public void delete(String userId) {
+	public int delete(String userId) {
+		int result = 0;
 		System.out.println(userId);
 		String sql = "delete from jsp_member where id='"+userId+"'";
 		try {
 			ps = con.prepareStatement(sql);
-			ps.executeUpdate();
+			result = ps.executeUpdate();
+			return result;
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
+		return result;
 	}
 }

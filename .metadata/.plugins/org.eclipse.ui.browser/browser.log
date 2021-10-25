@@ -7,3 +7,10 @@
 10월 16, 2021 12:31:48.428 [12012:6308:1016/123148.428:ERROR:device_event_log_impl.cc(214)] [12:31:48.428] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
 10월 16, 2021 13:33:48.409 [12012:6308:1016/133348.409:ERROR:CONSOLE(0)] "Not allowed to load local resource: file:///C:/java/jsp_workspace/javascript/resources/images/car01.png", source: devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@5a03c5f1033171d5ee1671d219a59e29cf75e054/&can_dock=true&dockSide=undocked (0)
 10월 16, 2021 13:33:50.601 [12012:6308:1016/133350.601:ERROR:CONSOLE(0)] "Not allowed to load local resource: file:///C:/java/jsp_workspace/javascript/resources/images/car01.png", source: devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@5a03c5f1033171d5ee1671d219a59e29cf75e054/&can_dock=true&dockSide=undocked (0)
+
+10월 24, 2021 17:26:17.137 NEW SESSION
+10월 24, 2021 17:26:17.138 [17872:10544:1024/172617.136:ERROR:chrome_browser_main_extra_parts_metrics.cc(230)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+10월 24, 2021 17:26:17.138 [17872:10544:1024/172617.136:ERROR:chrome_browser_main_extra_parts_metrics.cc(233)] crbug.com/1216328: Checking Bluetooth availability ended.
+10월 24, 2021 17:26:17.138 [17872:10544:1024/172617.136:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+10월 24, 2021 17:26:17.138 [17872:10544:1024/172617.137:ERROR:chrome_browser_main_extra_parts_metrics.cc(240)] crbug.com/1216328: Checking default browser status ended.
+10월 24, 2021 17:26:17.149 [17872:17340:1024/172617.149:ERROR:device_event_log_impl.cc(214)] [17:26:17.149] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
