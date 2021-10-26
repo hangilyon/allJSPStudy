@@ -31,6 +31,7 @@
 		border-top: 2px solid black; 
 		border-bottom: 2px solid black;
 		padding: 10px 0px;
+		font-size : 9pt;
 	}
 	.board_table tr td{
 		border-bottom: 0.5px solid gray;
@@ -45,6 +46,11 @@
 		margin-right: 40px;
 	}
 </style>
+<script type="text/javascript">
+	function addBoard(){
+		var table = document.getElementsByClassName('board_table');
+	}
+</script>
 </head>
 <body>
 <c:if test="${sessionScope.id != null }">
@@ -55,49 +61,19 @@
 			<h4>  자유롭게 글을 쓸 수 있는 게시판입니다.</h4><br>
 		</header>
 		<div class="context">
-			<table class="board_table">
-				<tr>
-					<th>번 호</th>
-					<th width="500px;">제 목</th>
-					<th>글 쓴 이</th>
-					<th>작 성 일</th>
-					<th>조 회 수</th>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-				</tr>
+			<table class="board_table" id="table_board">
+				<thead>
+					<tr>
+						<th>번 호</th>
+						<th width="500px;">제 목</th>
+						<th>글 쓴 이</th>
+						<th>작 성 일</th>
+						<th>조 회 수</th>
+					</tr>
+				</thead>
+				<tbody id = "tbody_trNum">
+				
+				</tbody>
 			</table>
 			<div class="board_num">
 				<a href="">처음</a>
@@ -110,31 +86,10 @@
 				<a href="">마지막</a>
 			</div>
 			<span class="writeBtn">
-				<button>글쓰기</button>
+				<button onclick="location.href='write_view.jsp'">글쓰기</button>
 			</span>
 		</div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<jsp:include page="../default/footer.jsp"/>
 
 </c:if>
