@@ -128,4 +128,30 @@ public class MemberDAO {
 		}
 		return result;
 	}
+	public int checkId(String userId) {
+		int result = 0;
+		String sql = "select id from jsp_member where id='"+userId+"'";
+		try {
+			ps = con.prepareStatement(sql);
+			result = ps.executeUpdate();
+			return result;
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return result;
+	}
+	public int checkPwd(String userPwd) {
+		int result = 0;
+		String sql = "select pwd from jsp_member where pwd='"+userPwd+"'";
+		try {
+			ps = con.prepareStatement(sql);
+			result = ps.executeUpdate();
+			return result;
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return result;
+	}
 }
