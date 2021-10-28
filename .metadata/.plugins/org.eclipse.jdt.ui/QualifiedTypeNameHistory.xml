@@ -10,4 +10,5 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.care.root.board.dto.BoardDTO"/>
     <fullyQualifiedTypeName name="jdk.jshell.spi.ExecutionControl.ExecutionControlException"/>
+    <fullyQualifiedTypeName name="com.care.root.paging.PageCount"/>
 </qualifiedTypeNameHistroy>

@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 
 import com.care.root.board.dto.BoardDTO;
+import com.care.root.paging.PageCount;
 
 import jdk.jshell.spi.ExecutionControl.ExecutionControlException;
 
@@ -24,11 +25,16 @@ public class BoardDAO {
 			e.printStackTrace();
 		}
 	}
-	public ArrayList<BoardDTO> list(){
+	public ArrayList<BoardDTO> list(int start, int end){
 		ArrayList<BoardDTO> list = new ArrayList<BoardDTO>();
-		String sql = "select * from test_board";
+		//String sql = "select * from test_board";
+		//String sql = "select * from test_board order by idgroup desc, step asc";
+		String sql = "select B.* from(select rownum rn, A.* from"
+				+ "(select * from test_board order by idgroup desc, step asc)A)B where rn between ? and ?";
 		try {
 			ps = con.prepareStatement(sql);
+			ps.setInt(1, start);
+			ps.setInt(2, end);
 			rs = ps.executeQuery();
 			while(rs.next()) {
 				BoardDTO dto = new BoardDTO();
@@ -68,8 +74,11 @@ public class BoardDAO {
 			e.printStackTrace();
 		}
 	}
-	public BoardDTO contentView(int id) {
-		upHit(id);
+	public BoardDTO contentView(int id, int flag) {
+		if(flag == 1) {
+			upHit(id);
+		}
+		
 		BoardDTO dto = new BoardDTO();
 		String sql = "select * from test_board where id ="+id;
 		try {
@@ -131,7 +140,77 @@ public class BoardDAO {
 			e.printStackTrace();
 			// TODO: handle exception
 		}
+	}
+	public void reply(BoardDTO dto) {
+		replyShape(dto);
+		String sql = "insert into test_board(id, name, title, content, idgroup, step, indent) "
+				+ "values(test_board_seq.nextval, ?,?,?,?,?,?)";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setInt(4, dto.getIdgroup());
+			ps.setInt(5, dto.getStep()+1);
+			ps.setInt(6, dto.getIndent()+1);
+			
+			ps.setString(1, dto.getName());
+			ps.setString(2, dto.getTitle());
+			ps.setString(3, dto.getContent());
+			
+			ps.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+	}
+	public void replyShape(BoardDTO dto) {
+		String sql = "update test_board set step=step+1 where idgroup=? and step>?";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setInt(1, dto.getIdgroup());
+			ps.setInt(2, dto.getStep());
+			
+			ps.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+	}
+	public int getTotalPage() {
+		String sql = "select count(*) from test_board";
+		int totPage = 0;
+		try {
+			ps = con.prepareStatement(sql);
+			rs = ps.executeQuery();
+			if(rs.next()) {
+				totPage = rs.getInt(1);
+			}
+			return totPage;
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+		return totPage;
+	}
+	public PageCount pagingNum(int start) {
+		PageCount pc = new PageCount();
+		if(start == 0) {
+			start = 1;
+		}
+		int pageNum = 3;
+		int totalPage = getTotalPage();
 		
+		int totEndPage = totalPage / pageNum;
+		if(totalPage%pageNum != 0 ) {
+			totEndPage++;
+		}
+		
+		int endPage = start * pageNum;
+		int startPage = endPage +1 - pageNum;
+		
+		pc.setStartPage(startPage);
+		pc.setEndPage(endPage);
+		pc.setTotEndPage(totEndPage);
+		
+		return pc;
 	}
  }
 
