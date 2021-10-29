@@ -16,5 +16,6 @@
 	${dao.modify(param.id, param.name, param.title, param.content) }
 	<%-- <c:redirect url="content_view.jsp?id=${param.id }"/> --%>
 	<c:redirect url="list.jsp"/>
+	
 </body>
 </html>
